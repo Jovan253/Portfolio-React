@@ -1,0 +1,16 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/1/travel-tracker.jpg",
+            "title": "Travel Tracker",
+            "description": "Website to track travels across the globe",
+            "url": "https://travel-trakr.vercel.app/"
+        },
+        {
+            "cover": "/portfolio/1/draggy.jpg",
+            "title": "Draggy Wings",
+            "description": "A mobile video game",
+            "url": "https://play.google.com/store/apps/details?id=com.JovialStudios.DraggyWings"
+        }
+    ]
+}

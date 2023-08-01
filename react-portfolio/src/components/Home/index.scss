@@ -103,15 +103,25 @@ h2{
   }
 
   .logo-container {
-    display: none;
+    position: relative;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+    left: 0;
   }
 
-  // .logo-container svg {
-  //   position: absolute;
-  //   top: auto;
-  //   right: auto;
-  //   bottom: auto;
-  //   left: 0;
-  //   margin: auto;
-  // }
+  .logo-container .flag {
+    height: 150px !important;
+    width: 50% !important;
+    position: absolute;
+    top: 60%;
+    right: auto;
+    bottom: auto;
+    left: 40%;
+    margin: auto;
+  }
+
 }

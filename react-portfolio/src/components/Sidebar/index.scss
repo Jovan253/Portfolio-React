@@ -128,6 +128,10 @@
     }
 }
 
+.hamburger-icon, .close-icon {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .nav-bar { 
     background: transparent;
@@ -147,7 +151,7 @@
       height: 100%;
       margin: 0;
       z-index: 2;
-      position: fixed;
+      position: fixed;      
 
       &.mobile-show {
         display: block;
@@ -157,18 +161,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: limegreen;         
+        top: 25%;        
       }
 
       a:after {
         opacity: 1;
         position: initial;
         width: auto;
-        margin-left: 10PX;
+        margin-left: 10px;
       }
 
       a svg {
         opacity: 1 !important;
       }
+     }
+
+     .hamburger-icon,
+     .close-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: block;
      }
   }
 }

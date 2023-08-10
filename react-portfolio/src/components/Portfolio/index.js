@@ -19,10 +19,11 @@ const Portfolio = () => {
 
     const renderPortfolio = (portfolio) => {
         return (
-            <div className='images-container'>
+            <>                       
+            <div className='images-container'>                
                 {
                     portfolio.map((port, i) =>{
-                        return (
+                        return (                            
                             <div key={i} className='image-box'>
                                 <img src={port.cover} alt='portfolio' className='portfolio-image'/>
                                 <div className='content'>
@@ -37,6 +38,7 @@ const Portfolio = () => {
                     })
                 }
             </div>
+            </>
         )
     }
 
@@ -46,7 +48,9 @@ const Portfolio = () => {
             <h1 className='page-title'>
                 <AnimatedLetters letterClass={letterClass} strArray={"Portfolio".split("")} idx={15}/>
             </h1>
+            <h2>Personal projects:</h2> 
             <div>{renderPortfolio(portfolioData.portfolio)}</div>
+            <h2>Professional projects:</h2>
         </div>
         <Loader type='pacman'/>
         </>

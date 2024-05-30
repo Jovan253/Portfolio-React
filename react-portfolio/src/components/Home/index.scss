@@ -51,13 +51,23 @@
 }
 
 h2{
-    color: #8d8d8d;
+    color: white;
     margin-top: 20px;    
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     font-family: sans-serif;
     letter-spacing: 2px;
-    animation: fadeIn 1s 1.8s backwards;    
+    animation: fadeIn 1s 1.8s backwards;      
+}
+
+p {
+  margin-bottom: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  animation: fadeIn 1s 1.8s backwards;  
 }
 
 .flat-button{

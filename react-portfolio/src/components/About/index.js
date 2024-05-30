@@ -2,12 +2,14 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters'
 import {useEffect, useRef, useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faCss3Alt, faHtml5, faJs, faJava, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faGitAlt, faJava, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faCloudArrowUp } from '@fortawesome/free-solid-svg-icons';
 import Loader from 'react-loaders';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const aboutFlag = useRef(false) //here I am creating a flag
+    const pdfUrl = process.env.PUBLIC_URL + '/resume.pdf';
 
     useEffect(() => {
      if (!aboutFlag.current) { //using the flag to check if component mounted
@@ -35,8 +37,9 @@ const About = () => {
                     coding skills.                    
                 </p>
                 <p>
-                    To find out more about me access my CV here!
+                    To find out more about me access my CV <a href={pdfUrl} download="CV.pdf" className="download-button">here</a>!
                 </p>
+                
             </div>
 
             <div className='stage-cube-cont'>
@@ -45,19 +48,19 @@ const About = () => {
                         <FontAwesomeIcon icon={faReact} color='#61dbfb'/>
                     </div>
                     <div className='face2'>
-                        <FontAwesomeIcon icon={faCss3Alt} color='#0f74b8'/>
-                    </div>
-                    <div className='face3'>
-                        <FontAwesomeIcon icon={faHtml5} color='#e54c21'/>
-                    </div>
-                    <div className='face4'>
-                        <FontAwesomeIcon icon={faJs} color='#fcd83a'/>
-                    </div>
-                    <div className='face5'>
                         <FontAwesomeIcon icon={faJava} color='#3583a3'/>
                     </div>
-                    <div className='face6'>
+                    <div className='face3'>
                         <FontAwesomeIcon icon={faPython} color='#FFca1d'/>
+                    </div>
+                    <div className='face4'>
+                        <FontAwesomeIcon icon={faGitAlt} color='#f44d27'/>
+                    </div>
+                    <div className='face5'>
+                        <FontAwesomeIcon icon={faDatabase} color='#0F1830'/>
+                    </div>
+                    <div className='face6'>
+                        <FontAwesomeIcon icon={faCloudArrowUp} color='#1476F3'/>
                     </div>
                 </div>
             </div>

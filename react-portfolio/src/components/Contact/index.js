@@ -44,7 +44,7 @@ const Contact = () => {
                     <AnimatedLetters letterClass={letterClass} strArray={['C','o','n','t','a','c','t',' ','m','e']} idx={15}/>
                 </h1>
                 <p>
-                    I am interested in any opportunities. 
+                    I am interested in any challenging IT opportunities. 
                     Feel free to contact me using the below form.
                 </p>
                 <div className='contact-form'>

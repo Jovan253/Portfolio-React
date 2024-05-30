@@ -9,7 +9,7 @@ import Loader from 'react-loaders';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray = ['o', 'v', 'a', 'n', ',']
-    const jobArray = ['a', ' ', 's', 't', 'u', 'd', 'e', 'n', 't']
+    const jobArray = ['a', ' ', 'C', 'o', 'm', 'p', 'u', 't', 'e', 'r', ' ', 'S', 'c', 'i', 'e', 'n', 'c', 'e', ' ', 'g', 'r', 'a', 'd', 'u', 'a', 't', 'e']    
 
     const mountFlag = useRef(false) //here I am creating a flag
 
@@ -36,12 +36,19 @@ const Home = () => {
                 <img src={LogoTitle} alt="developer"/>
                 <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>
                 <br />
-                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={20}/>
+                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={20}/>                
                 </h1>
 
-                <h2>
-                    at the University of Warwick
-                </h2>
+                <div className="hover-zone">
+                    <h2>
+                        from the University of Warwick
+                    </h2>
+                    <br/>
+                    <p>
+                        I'm open to exciting opportunities in the tech industry. Feel free to reach out!
+                    </p>
+                </div>
+
                 <Link to='/contact' className="flat-button">
                     CONTACT ME
                 </Link>

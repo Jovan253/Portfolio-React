@@ -5,6 +5,12 @@
             "title": "Travel Tracker",
             "description": "Website to track travels across the globe",
             "url": "https://travel-trakr.vercel.app/"
+        },
+        {
+            "cover": "/portfolio/1/movie-ranker.jpg",
+            "title": "Movie Ranker",
+            "description": "Website to rank movies you've watched",
+            "url": "https://movie-ranker-seven.vercel.app/"
         }
 
     ]
